@@ -62,3 +62,8 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+## Generative AI Reflection
+-VSCode GenAi
+-Stucture, External Css and generated text related to the activity
+-UI/UX Changes
