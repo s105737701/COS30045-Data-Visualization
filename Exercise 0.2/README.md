@@ -65,5 +65,5 @@ energy-webpage-v1
 
 ## Generative AI Reflection
 -VSCode GenAi
--Stucture, External Css and generated text related to the activity
+-Stucture, External Css and generated text related to the activity and JSS
 -UI/UX Changes
