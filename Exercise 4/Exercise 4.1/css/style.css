@@ -1,10 +1,10 @@
 :root {
-    --ink: #172b4d;
-    --paper: #f4edd8;
-    --panel: #fffaf0;
-    --tomato: #bd4938;
-    --mustard: #d69b2d;
-    --rule: #b9a982;
+    --ink: #111111;
+    --paper: #ffffff;
+    --panel: #ffffff;
+    --tomato: #f5b335;
+    --mustard: #f5b335;
+    --rule: #111111;
     --white: #ffffff; 
 }
 
@@ -19,8 +19,6 @@ body {
     line-height: 1.65;
     color: var(--ink);
     background-color: var(--white);
-    background-image: radial-gradient(#d9cdb0 0.7px, transparent 0.7px);
-    background-size: 7px 7px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -48,7 +46,6 @@ body {
     height: 44px;
     width: auto;
     display: block;
-    filter: sepia(0.25) saturate(1.2);
 }
 
 .logo:hover img {
@@ -81,7 +78,7 @@ body {
 .nav-link.active {
     background: var(--tomato);
     border-color: var(--tomato);
-    color: #fffaf0;
+    color: var(--ink);
 }
 
 .container {
@@ -139,7 +136,7 @@ h3 {
 .content-section p,
 .faq-answer p,
 .content-section li {
-    color: #32445c;
+    color: var(--ink);
 }
 
 .content-section p {
