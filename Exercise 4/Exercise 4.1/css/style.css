@@ -25,12 +25,13 @@ body {
 }
 
 .navbar {
-    background: var(--ink);
-    border-bottom: 5px solid var(--tomato);
+    background: var(--paper);
+    border-bottom: 3px solid var(--ink);
     padding: 0.7rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 3px 0 var(--tomato);
 }
 
 .nav-container {
@@ -59,7 +60,7 @@ body {
 }
 
 .nav-link {
-    color: var(--paper);
+    color: var(--ink);
     text-decoration: none;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 0.82rem;
@@ -71,12 +72,13 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--mustard);
+    color: var(--ink);
+    background: var(--mustard);
     border-color: var(--mustard);
 }
 
 .nav-link.active {
-    background: var(--tomato);
+    background: var(--mustard);
     border-color: var(--tomato);
     color: var(--ink);
 }
@@ -173,6 +175,94 @@ h3 {
     max-width: 100%;
     height: auto;
     margin: 1rem auto;
+}
+
+.house-page {
+    width: min(930px, calc(100% - 3rem));
+    margin: 2.75rem auto;
+    flex: 1;
+}
+
+.house-panels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 340px));
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.house-panel {
+    margin: 0;
+    text-align: center;
+}
+
+.house-image-frame {
+    aspect-ratio: 0.7;
+    overflow: hidden;
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.house-image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.house-panel figcaption {
+    margin-top: 0.65rem;
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.house-panel h2 {
+    border-bottom: 0;
+    margin-top: 0.65rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.house-table-wrapper {
+    overflow-x: auto;
+}
+
+.house-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--ink);
+    text-align: left;
+}
+
+.house-table caption {
+    margin-bottom: 0.7rem;
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.house-table th,
+.house-table td {
+    border: 1px solid var(--ink);
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+.house-table thead th {
+    background: var(--tomato);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.house-table tbody th {
+    background: #fff8e8;
+    font-weight: bold;
 }
 
 .content-section ul {
@@ -289,6 +379,11 @@ h3 {
     .content-section,
     .faq-section {
         padding: 1.25rem;
+    }
+
+    .house-panels {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
     }
 }
 
