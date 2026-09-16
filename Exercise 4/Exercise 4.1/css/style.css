@@ -107,7 +107,7 @@ h1::after {
 }
 
 h2 {
-    color: var(--tomato);
+    color: var(--ink);
     margin: 0 0 1rem;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 1.35rem;
