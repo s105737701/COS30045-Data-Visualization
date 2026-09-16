@@ -146,6 +146,38 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.storyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.storyboard-item {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: var(--white);
+}
+
+.storyboard-item h3 {
+    margin: 0 0 0.5rem;
+    color: var(--tomato);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.storyboard-item p {
+    margin: 0;
+}
+
+.storyboard-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
 .content-section ul {
     margin: 0.5rem 0 0.5rem 1.4rem;
 }
@@ -235,6 +267,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    .storyboard-grid {
+        grid-template-columns: 1fr;
+    }
+
     .nav-container {
         flex-direction: column;
         gap: 0.65rem;
