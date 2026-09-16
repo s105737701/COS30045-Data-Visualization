@@ -10,3 +10,18 @@ svg
     .attr("width", 414)
     .attr("height", 16)
     .attr("fill", "blue");
+
+d3.csv("data/4.4exportdata.csv", d => {
+  return {
+    brand: d.brand,
+    count: +d.count
+  };
+}).then(data => {
+  console.log(data);
+  console.log(data.length);
+  console.log(d3.max(data, d => d.count));
+  console.log(d3.min(data, d => d.count));
+  console.log(d3.extent(data, d => d.count)); //=> array with min and max
+  data.sort((a, b) => b.count - a.count);
+  drawBarChart(data);
+});
