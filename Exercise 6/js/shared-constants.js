@@ -16,3 +16,11 @@ const yScale = d3.scaleLinear()
 //create bin generator using d3.bin()
 const binGenerator = d3.bin()
     .value(d => d.energyConsumption) //accessor function
+
+//array of filter options for screen types
+const filter_screen = [[
+    { id: "all", label: "All", isActive: true },
+    { id: "LED", label: "LED", isActive: false },
+    {id : "LCD", label: "LCD", isActive: false },
+    { id: "OLED", label: "OLED", isActive: false },
+]]
