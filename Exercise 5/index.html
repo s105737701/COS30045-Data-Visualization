@@ -124,6 +124,15 @@
 
         <div class="responsive-svg-container"></div>
 
+        <section class="content-section">
+            <h2>Mean Energy Consumption by Screen Technology</h2>
+            <p>
+                Mean labelled energy consumption in kWh per year. The supplied data contains averages, not TV counts,
+                so the slices compare average values rather than total consumption across all TVs.
+            </p>
+            <div id="donut-chart"></div>
+        </section>
+
         <div id="bar-chart"></div>
 
         <div id="line-chart"></div>
@@ -136,8 +145,9 @@
 
     <script src="js/script.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!-- <script src="js/main.js"></script> --> 
-    <!-- <script src="js/barchart.js"></script> -->
-    <script src="js/linechart.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/barchart.js"></script>
+    <script type="module" src="js/linechart.js"></script>
+    <script type="module" src="js/donutchart.js"></script>
 </body>
 </html>
