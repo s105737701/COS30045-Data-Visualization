@@ -38,15 +38,25 @@
             </p>
         </section>
 
-        <section class="content-section">
-            <h2>Key Statistics</h2>
-            <ul>
-                <li>Residential appliances account for approximately 50-60% of household electricity consumption</li>
-                <li>Heating and cooling systems are typically the largest energy consumers</li>
-                <li>Energy-efficient appliances can reduce consumption by up to 50%</li>
-                <li>Smart energy management is becoming increasingly important for Australian households</li>
-            </ul>
-        </section>
+        <!-- Exercise 5 and 6 here. div for charts -->
+        <h2> Bar charts </h2>
+        <div class="responsive-svg-container"></div>
+     
+        <div id="bar-chart"></div>
+
+        <h2> Line Chart </h2>
+        <div id="line-chart"></div>
+        
+        <h2>Donut Chart</h2>
+        <div id="donut-chart"></div>
+        
+        <h2>Filters and Histogram</h2>
+        <div id="filters_screen"></div>
+
+        <div id="histogram" class="responsive-svg-container"></div></div>
+
+        <h2>Scatter Plot</h2>
+        <div id="scatterplot" class="responsive-svg-container"></div>
 
         <!-- FAQ Section -->
         <section class="faq-section">
@@ -122,20 +132,6 @@
             </div>
         </section>
 
-        <div class="responsive-svg-container"></div>
-
-        <section class="content-section">
-            <h2>Mean Energy Consumption by Screen Technology</h2>
-            <p>
-                Mean labelled energy consumption in kWh per year. The supplied data contains averages, not TV counts,
-                so the slices compare average values rather than total consumption across all TVs.
-            </p>
-            <div id="donut-chart"></div>
-        </section>
-
-        <div id="bar-chart"></div>
-
-        <div id="line-chart"></div>
     </main>
 
     <!-- Footer -->
@@ -143,11 +139,20 @@
         <p>&copy; <span id="year"></span> Danish. With GenAI Assistance.</p>
     </footer>
 
+    <!-- Exercise 5 -->
     <script src="js/script.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/barchart.js"></script>
     <script type="module" src="js/linechart.js"></script>
     <script type="module" src="js/donutchart.js"></script>
+
+    <!-- Exercise 6 -->
+    <script src="js/load-data.js"></script>
+    <script src="js/shared-constants.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/scatterplot.js"></script>
+
 </body>
 </html>
