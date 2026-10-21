@@ -24,7 +24,7 @@ const drawScatterplot = (data) => {
 		.domain(data.map(d => d.screenTech))
 		.range(d3.schemeCategory10);
 
-	innerChartS.selectAll("circle")
+	innerChartS.selectAll("circle") 
 		.data(data)
 		.join("circle")
 		.attr("r", 3)
